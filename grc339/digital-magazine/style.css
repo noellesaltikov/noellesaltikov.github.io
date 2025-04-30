@@ -15,7 +15,7 @@ a {
     text-decoration: none;
 }
 
-nav, p {
+nav, figcaption, p, footer{
     font-family: sans-serif;
 	line-height: 1.4em;
 	color: #222;
@@ -118,7 +118,7 @@ aside p {
 }
 
 footer{
-    background-color:rgb(92,118,150);
+    background-color:#557aac;
 }
 
 footer p{
