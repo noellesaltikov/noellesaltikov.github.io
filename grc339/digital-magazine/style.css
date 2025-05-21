@@ -6,17 +6,24 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 div.container, div.home-container{
     max-width: 35em;
     margin: auto;
+    background-color: #F2DFC2;
 }
+
+
 img {
     width: 100%;
     display: block;  
 }
 a {
     text-decoration: none;
+   
 }
 
 nav, figcaption, p, footer{
-    font-family: sans-serif;
+    
+    font-family: "area-normal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 	line-height: 1.4em;
 	color: #222;
 	box-sizing: border-box;
@@ -26,61 +33,85 @@ nav, figcaption, p, footer{
 }
 
 h1 {
-    max-width: 7em;
+    max-width: 20em;
     margin: 1em 0.5em 1.5em;
 
 }
 p {
     margin: 0.5em 0em 2em;
+    padding: 0.5em;
     color:#222
     
 }
 
 nav ul {
+    
     list-style: none;
     padding: 0;
     margin: 0.5em;
   }
   nav {
+    
     margin-bottom: 1em;
   }
 
   a h2{
-    font-family:serif;
-    font-weight: bold;
+    font-family: "new-spirit", serif;
+font-weight: 700;
+font-style: normal;
     font-size: 3em;
     padding-top:0.5em;
-    color:#557aac;
+    color:#303086;
   }
   nav a {
    
     text-decoration: none;
-    color: #557aac;
+    color: #2F2F86;
     font-weight: bold;
     font-size: 1.2em;
+    
    
   }
+
+  nav li {
+    font-family: "new-spirit", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  nav li a:hover {
+    border-bottom: 3px solid #99C252;
+    
+  }
+
+  .mainstory:hover, .secondarystory:hover{
+    box-shadow: 0 4px 10px rgba(43, 34, 36, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+   
   
 
 article h2 {
-    font-family:serif;
-    font-weight: bold;
+    font-family: "new-spirit", serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 3em;
     
     padding-top:0.5em;
-    color:#557aac;
+    color:#303086;
 }
 aside h2 {
-    
-    font-family:serif;
-    font-weight: bold;
+    font-family: "new-spirit", serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.25em;
     padding-top:0.5em;
-    color:#557aac;
+    color:#303086;
 }
 
 aside {
-    background-color: #b9b4f0;
+
     padding: 1em;
 
 }
@@ -109,16 +140,16 @@ aside p {
 
 
 .tertiarystory {
-    border-top: 1px solid #222; 
+    border-top: 2px solid #99C252; 
     padding-top: 0.5em; 
 }
 
 footer{
-    background-color:#557aac;
+    background-color:#99C254;
 }
 
 footer p{
-    color:rgb(238,238,238);
+    color:#110F13;
     padding:0.75em 0em;
     margin-left: 0.5em;
     margin-bottom: 0em;
@@ -135,6 +166,7 @@ div.home-container aside {
     background: none;
     padding: 0;
     margin-top: 0;
+   background-color: none;
 }
 
 @media only screen and (min-width:35em) {
@@ -234,3 +266,6 @@ section.secondarystory a h2 {
  }
  
 }
+
+
+
