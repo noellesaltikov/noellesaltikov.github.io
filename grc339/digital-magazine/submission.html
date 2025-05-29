@@ -1,0 +1,86 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+           
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- You need this to proper scale in actual mobile devices.-->
+            <link rel="stylesheet" type="text/css" href="style.css"> <!-- Don’t forget to link to your CSS here. -->
+            <link rel="stylesheet" href="https://use.typekit.net/xsc1ncf.css">
+            <title>Modd Co. gallery</title> <!-- This will be replaced with the actual name of the publication later.  -->
+
+            <!-- Helpful meta tags to fight GitHub aggresive caching-->
+                <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+                <meta http-equiv="Pragma" content="no-cache" />
+                <meta http-equiv="Expires" content="0" />
+            
+        </head>	
+
+          <body>
+            <div class="subscription">
+                
+                <header> 
+                    <h1>
+                        <a href="index.html"><img src="moddlogo.svg" alt="Modd logo."></a>
+                    </h1> 
+                     <nav>
+                    <ul>
+                      <li><a href="#">Voices</a></li>
+                      <li><a href="#">Mixtape</a></li>
+                      <li><a href="photogallery.html">Gallery</a></li>
+                      <li><a href="submission.html">Submit</a></li>
+                      <li><a href="#">About</a></li>
+                    </ul>
+                  </nav>
+                </header>
+
+                
+                  <h2>Subscribe to our Newsletter</h2>
+                  <form>
+
+                    <section class="personal-info">
+                    <h3>Personal Information</h3>
+
+    
+                   <ul>
+                        <li>
+                            <label for="fname"> First Name:</label> 
+                            <input type="text" name="fname" id="fname" placeholder="First name" />
+                        </li>
+                        <li>
+                            <label for="lname"> Last Name:</label> 
+                            <input type="text" name="lname" id="lname" placeholder="Last name" />
+                        </li>
+                        <li>    
+                            <label for="email">Email Address:</label> 
+                            <input type="email" name="email" id="email" placeholder="Your email" />
+                        </li>
+                    </ul>
+                </section>
+                <section class="preferences">
+                    <h3>What do you want more of?</h3>
+                    <ul>
+                        <li>
+                           <input type="checkbox" id="Interviews" name="interviews">
+                           <label for="Interviews">Interviews</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="Playlists" name="Playlists">
+                           <label for="Playlists"> More Playlists</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="upcoming" name="upcoming">
+                           <label for="upcoming">New upcoming artists</label>
+                        </li>
+                     </ul>
+                </section>
+            <button type="submit">Sign Up</button>
+            </form>
+
+                   <footer>
+
+                    <p>Modd Co. All rights reserved.</p>
+                </footer>
+
+            </div>
+        </body>
+    </html>
