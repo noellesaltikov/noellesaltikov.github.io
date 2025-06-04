@@ -58,9 +58,10 @@ nav ul {
   }
 
   a h2{
+    margin: 0;
     font-family: "new-spirit", serif;
-font-weight: 700;
-font-style: normal;
+    font-weight: 700;
+    font-style: normal;
     font-size: 3em;
     padding-top:0.5em;
     color:#303086;
@@ -95,15 +96,16 @@ font-style: normal;
   
 
 article h2 {
+    margin: 0em;
     font-family: "new-spirit", serif;
     font-weight: 700;
     font-style: normal;
     font-size: 3em;
-    
     padding-top:0.5em;
     color:#303086;
 }
 aside h2 {
+    margin: 0em;
     font-family: "new-spirit", serif;
     font-weight: 700;
     font-style: normal;
@@ -113,7 +115,6 @@ aside h2 {
 }
 
 aside {
-
     padding: 1em;
 
 }
@@ -126,6 +127,9 @@ aside p {
     margin: 0 0.25em;
     
 }
+.mainstory p {
+    margin: 1em;
+}
 
 .secondarystory h2 {
 
@@ -133,7 +137,9 @@ aside p {
     margin: 0 0.5em;
     
 }
-
+.secondarystory p {
+    margin: 1em;
+}
 .tertiarystory h2 {
     font-size: 1.25em;
     margin: 0 0.5em;
@@ -144,6 +150,7 @@ aside p {
 
 .tertiarystory {
     border-top: 2px solid #99C252; 
+    margin-top: 1em;
     padding-top: 0.5em; 
 }
 
@@ -187,6 +194,8 @@ div.home-container aside {
 @media only screen and (min-width: 60em) {
 
 
+
+    
 div.home-container {
     max-width: 80em;
     padding: 0 1em;
@@ -239,6 +248,7 @@ section.mainstory a figure img {
     object-fit: cover;
 }
 section.mainstory a h2 {
+    margin: 0;
     flex: 0 0 1em;
 }
  section.mainstory a p {
@@ -302,7 +312,7 @@ main.gallery figure figcaption {
     bottom: 1em;
     left: 1em;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: #e8e8e8;
     font-size: 0.7em;
     font-style: italic;
     padding: 0.5em 1em;
@@ -342,7 +352,7 @@ input[type=radio] {
 }
 
 
-
+/* Form */
 
 section.personal-info ul li input[type="text"],
 section ul li input[type="email"],
@@ -443,6 +453,65 @@ textarea {
 	font-family: sans-serif;
 	color: #777;
 	}
+
+
+
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+	flex: 4 0 30em; 
+	box-sizing: border-box;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+form ul {
+    list-style-type: none;
+}
+
+form section.personal-info li {
+    display: grid;
+}
+
+form li {
+    margin: 0.25em 0;
+}
+
+form section {
+    margin-top: 0.75em;
+}
+
+form section label{
+    color: #303086;
+
+    font-family: "area-normal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 120%;
+}
+
+.gallery h2{
+   font-family: "new-spirit", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em; 
+}
+
+.personal-info h3 {
+      font-family: "new-spirit", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.subscription-type h2 {
+     font-family: "new-spirit", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+} 
 button {
     font-family: "area-normal", sans-serif;
     font-weight: 500;
@@ -465,3 +534,86 @@ button:hover {
 
 
 
+
+/* Dark mode */
+ @media screen and (prefers-color-scheme: dark ) {
+
+        h1 {  
+            background-image: url("moddlogodark-02.svg");  
+            background-repeat: no-repeat;  
+            background-size: contain;  
+            }  
+
+        h1 img {  
+                opacity: 0;  
+                }  
+
+        div.container, div.home-container, div.gallery, div.subscription{
+    background-color: #211A4C;
+        }
+     
+
+        nav ul li a {
+            color: #F4DFC3;
+        }
+        
+        
+        
+        nav, p {
+            color: #F4DFC3
+        }
+        figcaption {
+           color: #BA497F;
+        }
+        
+        h2 {
+           
+            color: #EEBCD3;
+        }
+        
+       
+        
+        a{
+            text-decoration: none;
+            color: #F4DFC3;
+        }
+
+        footer p {
+            color: #1A1A1D;
+           
+            
+        }
+        article h2 {
+
+            color:#A1C162
+        }
+          aside h2 {
+        color: #EEBCD3;
+       }
+
+       .mainstory h2 {
+        margin-left: 0em;
+        color: #A1C162;
+       }
+       .mainstory p {
+        margin: 1em;
+       }
+       .secondarystory h2{
+        margin-left: 0em;
+         color: #A1C162;
+       }
+      
+       form section label {
+        color: #F4DFC3;
+       }
+    .mainstory:hover, .secondarystory:hover{
+    box-shadow: 0 4px 10px rgba(208, 160, 203, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+    }
+
+
+ /* font-family: "new-spirit", serif;
+    font-weight: 700;
+    font-style: normal; */
